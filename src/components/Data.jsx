@@ -1,0 +1,114 @@
+export const Data = [
+  {
+    id: 1,
+    image:
+      "https://res.cloudinary.com/dncmrwppr/image/upload/v1706645627/workCarNextjs_spuspj.jpg",
+    title: "Reservas de Automóviles",
+    description:
+      "Plataforma de muestra para reservar automóviles. Permite a los usuarios buscar, seleccionar y ver información de vehículos de manera eficiente",
+    category: "personales",
+    link: "https://car-website-seven.vercel.app/",
+    technologies: ["tailwindCSS", "react", "nextjs", "typescript"],
+  },
+  {
+    id: 2,
+    image:
+      "https://res.cloudinary.com/dncmrwppr/image/upload/v1706645627/workNikeWebsite_r92z2t.png",
+    title: "Carrito de compras nike",
+    description:
+      "Carrito de compra funcional para compras en línea. Va más allá de la función básica, destacando su relevancia y utilidad.",
+    category: "personales",
+    link: "https://nike-website-gamma.vercel.app/",
+    technologies: ["tailwindCSS", "react", "nextjs", "typescript"],
+  },
+  {
+    id: 3,
+    image:
+      "https://res.cloudinary.com/dncmrwppr/image/upload/v1706645627/workAuthNextjs2_pqv2m6.jpg",
+    title: "CRUD utilizando NextAuth",
+    description:
+      "Aplicación full-stack con registro, inicio de sesión y operaciones CRUD. Con NextAuth para autenticación y MongoDB para almacenamiento.",
+    category: "personales",
+    link: "https://crud-next13.vercel.app/",
+    technologies: ["tailwindCSS", "react", "nextjs", "nodejs", "mongodb"],
+  },
+  {
+    id: 4,
+    image:
+      "https://res.cloudinary.com/dncmrwppr/image/upload/v1706645626/workMernAdmin_iwempt.png",
+    title: "Registro e inicio de sesión",
+    description:
+      "Herramienta que facilita la autenticación, registro e inicio de sesión de usuarios con sus cuentas recién creadas.",
+    category: "personales",
+    link: "https://login-register-user.netlify.app/register",
+    technologies: [
+      "bootstrap",
+      "react",
+      "typescript",
+      "nodejs",
+      "expressjs",
+      "mongodb",
+    ],
+  },
+  {
+    id: 5,
+    image:
+      "https://res.cloudinary.com/dncmrwppr/image/upload/v1706645628/workDashboard_ar6vqp.jpg",
+    title: "Administrador de panel",
+    description:
+      "Dashboard administrativo que utiliza la biblioteca Syncfusion/ej2 para mostrar datos de manera impactante y funcional. ",
+    category: "personales",
+    link: "https://dashboard-app-reactjs.netlify.app",
+    technologies: ["tailwindCSS", "javascript", "react", "api"],
+  },
+  {
+    id: 6,
+    image: "workCelApp",
+    title: "Aplicación de Cuestionarios",
+    description:
+      "Permite a los usuarios responder preguntas de opción múltiple y obtener una puntuación al final del cuestionario. Proporciona retroalimentación visual sobre las respuestas seleccionadas.",
+    category: "personales",
+    link: "https://quizz-app-api-iphone.netlify.app/",
+    technologies: ["bootstrap", "javascript", "api"],
+  },
+  {
+    id: 7,
+    image: "workMomPage",
+    title: "Paula: Tarotista y Vidente",
+    description:
+      "Sitio web para Paula Dominguez, tarotista y vidente. Permite explorar servicios, establecer contacto y muestra testimonios, detalles de servicios y datos de contacto.",
+    category: "freelance",
+    link: "https://paula-tarot.netlify.app/",
+    technologies: ["css", "bootstrap", "javascript", "react", "api"],
+  },
+  {
+    id: 8,
+    image: "workFriendTomas",
+    title: "Punto Picada: Servicios de Catering",
+    description:
+      "Formulario web interactivo para solicitar cotizaciones de servicios de catering. Integración de EmailJS para comunicación eficaz.",
+    category: "freelance",
+    link: "https://punto-picada.netlify.app/",
+    technologies: ["css", "bootstrap", "javascript", "api"],
+  },
+  {
+    id: 9,
+    image: "workCurseSelling",
+    title: "Venta de cursos con mercadopago",
+    description:
+      "Plataforma de venta de cursos en línea. Permite buscar, seleccionar y ver información de cursos de manera eficiente.",
+    category: "freelance",
+    link: "https://punto-picada.netlify.app/",
+    technologies: ["css", "bootstrap", "javascript", "api"],
+  },
+  {
+    id: 10,
+    image: "workBlenMeetBurger",
+    title: "Blen Meet Burger: Hamburguesas Artesanales",
+    description:
+      "Landing page para Blen Meet Burger, empresa de hamburguesas artesanales. Interfaz atractiva que muestra productos y servicios, incluyendo datos de contacto de la empresa.",
+    category: "freelance",
+    link: "https://punto-picada.netlify.app/",
+    technologies: ["css", "bootstrap", "javascript", "api"],
+  },
+];
