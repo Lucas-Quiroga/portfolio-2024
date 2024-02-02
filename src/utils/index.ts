@@ -1,8 +1,9 @@
-const createLogo = (name) =>
+const createLogo = (name: string): string => (
   name
     .split(" ")
-    .map((word) => word[0])
+    .map((word: string) => word[0])
     .join("")
-    .toUpperCase();
+    .toUpperCase()
+);
 
 export { createLogo };

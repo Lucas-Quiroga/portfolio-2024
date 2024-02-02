@@ -73,27 +73,32 @@ export const Data = [
   },
   {
     id: 7,
-    image: "workMomPage",
+    image:
+      "https://res.cloudinary.com/dncmrwppr/image/upload/v1706839293/262shots_so_bkdgma.jpg",
     title: "Paula: Tarotista y Vidente",
     description:
       "Sitio web para Paula Dominguez, tarotista y vidente. Permite explorar servicios, establecer contacto y muestra testimonios, detalles de servicios y datos de contacto.",
     category: "freelance",
     link: "https://paula-tarot.netlify.app/",
     technologies: ["css", "bootstrap", "javascript", "react", "api"],
+    date: "14/09/2023",
   },
   {
     id: 8,
-    image: "workFriendTomas",
+    image:
+      "https://res.cloudinary.com/dncmrwppr/image/upload/v1706839725/830shots_so_xv9xlp.jpg",
     title: "Punto Picada: Servicios de Catering",
     description:
       "Formulario web interactivo para solicitar cotizaciones de servicios de catering. Integración de EmailJS para comunicación eficaz.",
     category: "freelance",
     link: "https://punto-picada.netlify.app/",
     technologies: ["css", "bootstrap", "javascript", "api"],
+    data: "09/12/2023",
   },
   {
     id: 9,
-    image: "workCurseSelling",
+    image:
+      "https://res.cloudinary.com/dncmrwppr/image/upload/v1706645628/workCurseSelling_tswjbw.jpg",
     title: "Venta de cursos con mercadopago",
     description:
       "Plataforma de venta de cursos en línea. Permite buscar, seleccionar y ver información de cursos de manera eficiente.",
@@ -103,7 +108,8 @@ export const Data = [
   },
   {
     id: 10,
-    image: "workBlenMeetBurger",
+    image:
+      "https://res.cloudinary.com/dncmrwppr/image/upload/v1706645626/workBlenMeetBurger_ejoaxe.jpg",
     title: "Blen Meet Burger: Hamburguesas Artesanales",
     description:
       "Landing page para Blen Meet Burger, empresa de hamburguesas artesanales. Interfaz atractiva que muestra productos y servicios, incluyendo datos de contacto de la empresa.",
