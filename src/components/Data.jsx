@@ -8,7 +8,9 @@ export const Data = [
       "Plataforma de muestra para reservar automóviles. Permite a los usuarios buscar, seleccionar y ver información de vehículos de manera eficiente",
     category: "personales",
     link: "https://car-website-seven.vercel.app/",
+    repository: "https://github.com/Lucas-Quiroga/car-website",
     technologies: ["tailwindCSS", "react", "nextjs", "typescript"],
+    date: "19/10/2023",
   },
   {
     id: 2,
@@ -19,7 +21,9 @@ export const Data = [
       "Carrito de compra funcional para compras en línea. Va más allá de la función básica, destacando su relevancia y utilidad.",
     category: "personales",
     link: "https://nike-website-gamma.vercel.app/",
+    repository: "https://github.com/Lucas-Quiroga/nike-website",
     technologies: ["tailwindCSS", "react", "nextjs", "typescript"],
+    date: "03/10/2023",
   },
   {
     id: 3,
@@ -30,7 +34,9 @@ export const Data = [
       "Aplicación full-stack con registro, inicio de sesión y operaciones CRUD. Con NextAuth para autenticación y MongoDB para almacenamiento.",
     category: "personales",
     link: "https://crud-next13.vercel.app/",
+    repository: "https://github.com/Lucas-Quiroga/crud-next13",
     technologies: ["tailwindCSS", "react", "nextjs", "nodejs", "mongodb"],
+    date: "23/08/2023",
   },
   {
     id: 4,
@@ -41,6 +47,7 @@ export const Data = [
       "Herramienta que facilita la autenticación, registro e inicio de sesión de usuarios con sus cuentas recién creadas.",
     category: "personales",
     link: "https://login-register-user.netlify.app/register",
+    repository: "https://github.com/Lucas-Quiroga/register-login-mern-app",
     technologies: [
       "bootstrap",
       "react",
@@ -49,6 +56,7 @@ export const Data = [
       "expressjs",
       "mongodb",
     ],
+    date: "06/06/2023",
   },
   {
     id: 5,
@@ -59,17 +67,22 @@ export const Data = [
       "Dashboard administrativo que utiliza la biblioteca Syncfusion/ej2 para mostrar datos de manera impactante y funcional. ",
     category: "personales",
     link: "https://dashboard-app-reactjs.netlify.app",
+    repository: "https://github.com/Lucas-Quiroga/dashboard-admin-app",
     technologies: ["tailwindCSS", "javascript", "react", "api"],
+    date: "04/10/2022",
   },
   {
     id: 6,
-    image: "workCelApp",
+    image:
+      "https://res.cloudinary.com/dncmrwppr/image/upload/v1706645627/workCelular_dv6ezs.jpg",
     title: "Aplicación de Cuestionarios",
     description:
       "Permite a los usuarios responder preguntas de opción múltiple y obtener una puntuación al final del cuestionario. Proporciona retroalimentación visual sobre las respuestas seleccionadas.",
     category: "personales",
     link: "https://quizz-app-api-iphone.netlify.app/",
+    repository: "https://github.com/Lucas-Quiroga/quizz-app",
     technologies: ["bootstrap", "javascript", "api"],
+    date: "21/06/2023",
   },
   {
     id: 7,
@@ -93,7 +106,7 @@ export const Data = [
     category: "freelance",
     link: "https://punto-picada.netlify.app/",
     technologies: ["css", "bootstrap", "javascript", "api"],
-    data: "09/12/2023",
+    date: "09/12/2023",
   },
   {
     id: 9,
@@ -103,8 +116,9 @@ export const Data = [
     description:
       "Plataforma de venta de cursos en línea. Permite buscar, seleccionar y ver información de cursos de manera eficiente.",
     category: "freelance",
-    link: "https://punto-picada.netlify.app/",
-    technologies: ["css", "bootstrap", "javascript", "api"],
+    link: "https://courses-selling-app.vercel.app/",
+    technologies: ["css", "tailwindCSS", "javascript", "api"],
+    date: "10/01/2024",
   },
   {
     id: 10,
@@ -114,8 +128,22 @@ export const Data = [
     description:
       "Landing page para Blen Meet Burger, empresa de hamburguesas artesanales. Interfaz atractiva que muestra productos y servicios, incluyendo datos de contacto de la empresa.",
     category: "freelance",
-    link: "https://punto-picada.netlify.app/",
+    link: "https://blend-meat-burger.netlify.app/",
     technologies: ["css", "bootstrap", "javascript", "api"],
+    date: "16/01/2024",
+  },
+  {
+    id: 11,
+    image:
+      "https://res.cloudinary.com/dncmrwppr/image/upload/v1706901887/970shots_so_xk18py.jpg",
+    title: "Advanced Shopping Cart",
+    description:
+      "Implementación de un carrito de compras avanzado en JavaScript y TypeScript. Incluye funcionalidades como añadir al carrito, ver el total, y botones para eliminar elementos del carrito.",
+    category: "personales",
+    link: "https://advanced-shopping-cart-reactjs.netlify.app/",
+    repository: "https://github.com/Lucas-Quiroga/Advanced-Shopping-Cart",
+    technologies: ["javascript", "typescript", "bootstrap"],
+    date: "22/6/2023",
   },
 ];
 

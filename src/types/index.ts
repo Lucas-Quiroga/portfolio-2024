@@ -5,7 +5,9 @@ export type DataType = {
     description:  string;
     category:     string;
     link:         string;
+    repository?:   string;
     technologies: string[];
+    date?: string;
 }
 
 export enum Category {

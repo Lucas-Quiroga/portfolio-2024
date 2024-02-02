@@ -16,12 +16,27 @@ const projects: DataType[] = Data;
           {" "}
           Experiencia laboral
         </h2>
+        <p class="text-xl">Freelance</p>
       </div>
 
-      <section class="container mx-auto py-10 md:py-20 antialiased ">
+      <section class="container mx-auto py-10 md:py-20 antialiased">
         <section class="grid lg:grid-cols-2 2xl:grid-cols-4 grid-cols-1 gap-8 cardContainerFreelance">
           {projects
             .filter((item) => item.category === "freelance")
+            .sort((a: DataType, b: DataType) => {
+              if (!a.date || !b.date) {
+                return 0; // Si no hay fechas, no se puede comparar
+              }
+
+              const fechaA = new Date(
+                a.date.split("/").reverse().join("/")
+              ).getTime();
+              const fechaB = new Date(
+                b.date.split("/").reverse().join("/")
+              ).getTime();
+
+              return fechaB - fechaA;
+            })
             .map((item, index) => (
               <div class={`freelance-card ${index > 3 ? "hidden" : ""}`}>
                 <CardProject
@@ -31,6 +46,7 @@ const projects: DataType[] = Data;
                   link={item.link}
                   technologies={item.technologies}
                   category={item.category}
+                  date={item.date}
                 />
               </div>
             ))}
@@ -52,7 +68,9 @@ const projects: DataType[] = Data;
   text === "personales" && (
     <section>
       <div>
-        <h2 class="text-4xl">Proyectos personales</h2>
+        <h2 class="flex items-center text-4xl font-semibold gap-x-3 text-black/80 dark:text-white">
+          Proyectos personales
+        </h2>
         <p class="text-xl">Más recientes</p>
       </div>
 
@@ -61,19 +79,37 @@ const projects: DataType[] = Data;
           class="grid lg:grid-cols-2 2xl:grid-cols-4 grid-cols-1 gap-8"
           id="cardContainer"
         >
-          {projects.slice(0, 6).map((item, index) => (
-            <div class={index > 3 ? "hidden" : ""}>
-              <CardProject
-                transition:persist
-                title={item.title}
-                description={item.description}
-                image={item.image}
-                link={item.link}
-                technologies={item.technologies}
-                category={item.category}
-              />
-            </div>
-          ))}
+          {projects
+            .filter((item) => item.category === "personales")
+            .sort((a: DataType, b: DataType) => {
+              if (!a.date || !b.date) {
+                return 0; // Si no hay fechas, no se puede comparar
+              }
+
+              const fechaA = new Date(
+                a.date.split("/").reverse().join("/")
+              ).getTime();
+              const fechaB = new Date(
+                b.date.split("/").reverse().join("/")
+              ).getTime();
+
+              return fechaB - fechaA;
+            })
+            .slice(0, 8)
+            .map((item, index) => (
+              <div class={index > 3 ? "hidden" : ""}>
+                <CardProject
+                  transition:persist
+                  title={item.title}
+                  description={item.description}
+                  image={item.image}
+                  link={item.link}
+                  repository={item.repository}
+                  technologies={item.technologies}
+                  category={item.category}
+                />
+              </div>
+            ))}
         </section>
       </section>
 
