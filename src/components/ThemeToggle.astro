@@ -2,9 +2,14 @@
 import { Moon, Sun } from "lucide-react";
 ---
 
-<button id="themeToggle">
-  <Sun className="h-[1.5rem] w-[1.3rem] dark:hidden" />
-  <Moon className="hidden h-5 w-5 dark:block" />
+<button
+  id="themeToggle"
+  class="p-4 dark:text-white text-lg hover:bg-slate-100 rounded-lg h-[3rem] text-center flex justify-center items-center mx-auto dark:hover:text-black"
+>
+  <Sun className="h-[1.5rem] w-[1.3rem] dark:hidden dark:hover:text-black" />
+  <Moon
+    className="hidden h-5 w-5 dark:block dark:text-white dark:hover:text-black"
+  />
   <span class="sr-only">Toggle theme</span>
 </button>
 

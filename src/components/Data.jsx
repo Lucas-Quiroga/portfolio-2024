@@ -9,7 +9,7 @@ export const Data = [
     category: "personales",
     link: "https://car-website-seven.vercel.app/",
     repository: "https://github.com/Lucas-Quiroga/car-website",
-    technologies: ["tailwindCSS", "react", "nextjs", "typescript"],
+    technologies: ["Tailwind", "React", "Nextjs", "Typescript", "Api"],
     date: "19/10/2023",
   },
   {
@@ -18,11 +18,11 @@ export const Data = [
       "https://res.cloudinary.com/dncmrwppr/image/upload/v1706645627/workNikeWebsite_r92z2t.png",
     title: "Carrito de compras nike",
     description:
-      "Carrito de compra funcional para compras en línea. Va más allá de la función básica, destacando su relevancia y utilidad.",
+      "Carrito de compra funcional para compras en línea a modo de ejemplo.  Destacando su relevancia y utilidad.",
     category: "personales",
     link: "https://nike-website-gamma.vercel.app/",
     repository: "https://github.com/Lucas-Quiroga/nike-website",
-    technologies: ["tailwindCSS", "react", "nextjs", "typescript"],
+    technologies: ["Tailwind", "React", "Nextjs", "Typescript"],
     date: "03/10/2023",
   },
   {
@@ -35,7 +35,7 @@ export const Data = [
     category: "personales",
     link: "https://crud-next13.vercel.app/",
     repository: "https://github.com/Lucas-Quiroga/crud-next13",
-    technologies: ["tailwindCSS", "react", "nextjs", "nodejs", "mongodb"],
+    technologies: ["Tailwind", "React", "NextJS", "NodeJS", "MongoDB", "Api"],
     date: "23/08/2023",
   },
   {
@@ -49,12 +49,12 @@ export const Data = [
     link: "https://login-register-user.netlify.app/register",
     repository: "https://github.com/Lucas-Quiroga/register-login-mern-app",
     technologies: [
-      "bootstrap",
-      "react",
-      "typescript",
-      "nodejs",
-      "expressjs",
-      "mongodb",
+      "Bootstrap",
+      "React",
+      "Typescript",
+      "NodeJS",
+      "ExpressJS",
+      "MongoDB",
     ],
     date: "06/06/2023",
   },
@@ -66,9 +66,9 @@ export const Data = [
     description:
       "Dashboard administrativo que utiliza la biblioteca Syncfusion/ej2 para mostrar datos de manera impactante y funcional. ",
     category: "personales",
-    link: "https://dashboard-app-reactjs.netlify.app",
+    link: "https://dashboard-app-Reactjs.netlify.app",
     repository: "https://github.com/Lucas-Quiroga/dashboard-admin-app",
-    technologies: ["tailwindCSS", "javascript", "react", "api"],
+    technologies: ["Tailwind", "Javascript", "React", "Api"],
     date: "04/10/2022",
   },
   {
@@ -81,7 +81,7 @@ export const Data = [
     category: "personales",
     link: "https://quizz-app-api-iphone.netlify.app/",
     repository: "https://github.com/Lucas-Quiroga/quizz-app",
-    technologies: ["bootstrap", "javascript", "api"],
+    technologies: ["Css", "Bootstrap", "Javascript", "Api"],
     date: "21/06/2023",
   },
   {
@@ -93,7 +93,7 @@ export const Data = [
       "Sitio web para Paula Dominguez, tarotista y vidente. Permite explorar servicios, establecer contacto y muestra testimonios, detalles de servicios y datos de contacto.",
     category: "freelance",
     link: "https://paula-tarot.netlify.app/",
-    technologies: ["css", "bootstrap", "javascript", "react", "api"],
+    technologies: ["Css", "Bootstrap", "Javascript", "React", "Api"],
     date: "14/09/2023",
   },
   {
@@ -105,31 +105,39 @@ export const Data = [
       "Formulario web interactivo para solicitar cotizaciones de servicios de catering. Integración de EmailJS para comunicación eficaz.",
     category: "freelance",
     link: "https://punto-picada.netlify.app/",
-    technologies: ["css", "bootstrap", "javascript", "api"],
+    technologies: ["Css", "Bootstrap", "Javascript", "Api"],
     date: "09/12/2023",
   },
   {
     id: 9,
     image:
       "https://res.cloudinary.com/dncmrwppr/image/upload/v1706645628/workCurseSelling_tswjbw.jpg",
-    title: "Venta de cursos con mercadopago",
+    title: "Venta de Cursos",
     description:
       "Plataforma de venta de cursos en línea. Permite buscar, seleccionar y ver información de cursos de manera eficiente.",
     category: "freelance",
     link: "https://courses-selling-app.vercel.app/",
-    technologies: ["css", "tailwindCSS", "javascript", "api"],
+    technologies: [
+      "Nextjs",
+      "Tailwind",
+      "Typescript",
+      "NodeJS",
+      "ExpressJS",
+      "MondoDB",
+      "MercadoPagoAPI",
+    ],
     date: "10/01/2024",
   },
   {
     id: 10,
     image:
       "https://res.cloudinary.com/dncmrwppr/image/upload/v1706645626/workBlenMeetBurger_ejoaxe.jpg",
-    title: "Blen Meet Burger: Hamburguesas Artesanales",
+    title: "Blend Meet Burger",
     description:
-      "Landing page para Blen Meet Burger, empresa de hamburguesas artesanales. Interfaz atractiva que muestra productos y servicios, incluyendo datos de contacto de la empresa.",
+      "Landing page para un emprendimiento de hamburguesas artesanales. Interfaz atractiva que muestra productos y servicios, incluyendo datos de contacto.",
     category: "freelance",
     link: "https://blend-meat-burger.netlify.app/",
-    technologies: ["css", "bootstrap", "javascript", "api"],
+    technologies: ["Astro", "Tailwind", "ReactJS"],
     date: "16/01/2024",
   },
   {
@@ -138,11 +146,11 @@ export const Data = [
       "https://res.cloudinary.com/dncmrwppr/image/upload/v1706901887/970shots_so_xk18py.jpg",
     title: "Advanced Shopping Cart",
     description:
-      "Implementación de un carrito de compras avanzado en JavaScript y TypeScript. Incluye funcionalidades como añadir al carrito, ver el total, y botones para eliminar elementos del carrito.",
+      "Implementación de un carrito de compras avanzado en JavaScript y Typescript. Incluye funcionalidades como añadir al carrito, ver el total, y botones para eliminar elementos del carrito.",
     category: "personales",
-    link: "https://advanced-shopping-cart-reactjs.netlify.app/",
+    link: "https://advanced-shopping-cart-Reactjs.netlify.app/",
     repository: "https://github.com/Lucas-Quiroga/Advanced-Shopping-Cart",
-    technologies: ["javascript", "typescript", "bootstrap"],
+    technologies: ["Javascript", "Typescript", "Bootstrap"],
     date: "22/6/2023",
   },
 ];
@@ -196,8 +204,8 @@ export const TechnologiesSVG = [
   },
   {
     id: 4,
-    name: "TailwindCSS",
-    doc: "https://tailwindcss.com/",
+    name: "Tailwind",
+    doc: "https://Tailwind.com/",
     svg: `
     <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
 <svg class="w-16 h-16  mb-2 text-primary-500" width="100%" height="100%" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title>file_type_tailwind</title><path d="M9,13.7q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q11.1,10.9,9,13.7ZM2,22.1q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q4.1,19.3,2,22.1Z" style="fill:#44a8b3"/></svg>`,
@@ -225,7 +233,7 @@ export const TechnologiesSVG = [
   {
     id: 6,
     name: "Typescript",
-    doc: "https://www.typescriptlang.org/docs/",
+    doc: "https://www.Typescriptlang.org/docs/",
     svg: `<?xml version="1.0" encoding="UTF-8"?>
     <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
     <svg class="w-16 h-16  mb-2 text-primary-500" width="100%" height="100%" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
@@ -245,7 +253,7 @@ export const TechnologiesSVG = [
   {
     id: 7,
     name: "React",
-    doc: "https://es.react.dev/",
+    doc: "https://es.React.dev/",
     svg: `<?xml version="1.0" encoding="UTF-8"?>
     <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
     <svg class="w-16 h-16  mb-2 text-primary-500" width="100%" height="100%" viewBox="0 -14 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
@@ -258,8 +266,8 @@ export const TechnologiesSVG = [
   },
   {
     id: 8,
-    name: "NextJS",
-    doc: "https://nextjs.org/",
+    name: "Nextjs",
+    doc: "https://Nextjs.org/",
     svg: `<?xml version="1.0" encoding="utf-8"?>
 
     <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
