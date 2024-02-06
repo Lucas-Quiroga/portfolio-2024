@@ -1,4 +1,5 @@
 ---
+import CV from "../../public/CV.pdf";
 const miComienzoIT = new Date(2021, 8, 3).getTime();
 ---
 
@@ -12,7 +13,32 @@ const miComienzoIT = new Date(2021, 8, 3).getTime();
         <h1
           class="text-3xl font-bold tracking-tight text-black sm:text-4xl md:text-5xl xl:text-7xl dark:text-white"
         >
-          Lucas Quiroga
+          Lucas <span class="title">Quiroga</span>
+          <div
+            class="relative inline-block bottom-8 left-10 group cursor-pointer"
+          >
+            <div
+              class="before-after absolute h-6 w-6 border-green-500 border-solid border-2 rounded-full right-0 bg-green-500 animate-pulse"
+            >
+              <div
+                class="ease-in duration-300 opacity-0 group-hover:block group-hover:opacity-100 transition-all"
+              >
+                <div
+                  class="ease-in-out duration-500 -translate-y-4 pointer-events-none transition-all group-hover:-translate-y-16 absolute left-1/2 z-50 flex -translate-x-1/2 flex-col items-center rounded-sm text-center text-sm text-white"
+                >
+                  <div class="rounded-sm bg-black py-1 px-2 dark:bg-white">
+                    <p class="whitespace-nowrap text-xl dark:text-black">
+                      Disponible para trabajar
+                    </p>
+                  </div>
+                  <div
+                    class="h-0 w-fit border-l-8 border-r-8 border-t-8 border-transparent border-t-black dark:border-t-white"
+                  >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <br />
 
@@ -104,6 +130,7 @@ const miComienzoIT = new Date(2021, 8, 3).getTime();
           </a>
           <a
             download=""
+            href={CV}
             rel="noopener noreferrer"
             class="inline-flex w-full max-w-inherit items-center justify-center gap-2 px-4 py-1 text-gray-800 transition bg-gray-100 border border-gray-300 rounded-none dark:bg-gray-800 dark:border-gray-600 dark:text-white focus-visible:ring-yellow-500/80 text-md hover:bg-gray-900 hover:border-gray-700 group sm:max-w-fit hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black cursor-pointer dark:hover:bg-white dark:hover:border-gray-700 dark:hover:text-black"
           >
@@ -139,21 +166,7 @@ const miComienzoIT = new Date(2021, 8, 3).getTime();
 </section>
 
 <style>
-  .animation-pulse {
-    /*box-shadow: 0 0 0 20px rgba(229,62,62, 0.5);
-    transform: scale(0.8);*/
-    animation: pulse 2s infinite;
-  }
-
-  @keyframes pulse {
-    from {
-      transform: scale(0.9);
-      opacity: 1;
-    }
-
-    to {
-      transform: scale(1.8);
-      opacity: 0;
-    }
+  .no-pulse-animation {
+    animation: none !important;
   }
 </style>

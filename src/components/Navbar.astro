@@ -35,14 +35,16 @@ const navItems = [
     <ul class="flex items-center gap-4 justify-center mx-auto">
       {
         navItems.map((item) => (
-          <li class="mx-auto">
-            <a
-              href={item.href}
-              class="p-4 dark:text-light  text-lg hover:bg-slate-100 rounded-lg h-[3rem] text-center flex justify-center items-center mx-auto"
-            >
-              {item.name}
-            </a>
-          </li>
+          <>
+            <li class="mx-auto">
+              <a
+                href={item.href}
+                class="p-4 dark:text-light  text-lg hover:bg-slate-100 rounded-lg h-[3rem] text-center flex justify-center items-center mx-auto"
+              >
+                {item.name}
+              </a>
+            </li>
+          </>
         ))
       }
 

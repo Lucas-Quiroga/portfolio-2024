@@ -23,7 +23,9 @@ const menuitems = [
 ];
 ---
 
-<header class="flex flex-col lg:flex-row justify-between items-center my-5">
+<header
+  class="flex flex-col lg:flex-row justify-between items-center my-5 border-b-2 pb-3"
+>
   <Astronav>
     <div class="flex w-full px-4 lg:w-auto items-center justify-between">
       <a
@@ -49,6 +51,15 @@ const menuitems = [
             </li>
           ))
         }
+
+        <select
+          class="dark:text-light text-lg hover:bg-slate-100 rounded-lg h-[3rem] text-center flex justify-center items-center mx-auto dark:text-white dark:hover:text-black"
+          name="language"
+          id="language"
+        >
+          <option value="English" class="cursor-pointer">English</option>
+          <option value="French" class="cursor-pointer">French</option>
+        </select>
         <ThemeToggle />
       </ul>
     </MenuItems>
