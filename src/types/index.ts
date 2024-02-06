@@ -14,3 +14,9 @@ export enum Category {
     Freelance = "freelance",
     Personales = "personales",
 }
+
+export type ChildProps = {
+    name: string;
+    path: string;
+    data: string;
+  };
