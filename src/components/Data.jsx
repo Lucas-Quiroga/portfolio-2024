@@ -153,6 +153,19 @@ export const Data = [
     technologies: ["Javascript", "Typescript", "Bootstrap"],
     date: "22/6/2023",
   },
+  {
+    id: 12,
+    image:
+      "https://res.cloudinary.com/dncmrwppr/image/upload/v1709262377/919shots_so_uzlhng.jpg",
+    title: "Dev Desing",
+    description:
+      "Landing page de mi proyecto emprendedor, orientado a potenciar empresas y proyectos individuales hacia su siguiente fase.",
+    category: "personales",
+    link: "https://devdesing.netlify.app/",
+    repository: "https://github.com/Lucas-Quiroga/dev-desing",
+    technologies: ["Tailwind", "Javascript", "Typescript", "Nextjs"],
+    date: "01/02/2024",
+  },
 ];
 
 export const TechnologiesSVG = [

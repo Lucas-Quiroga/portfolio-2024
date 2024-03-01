@@ -88,6 +88,15 @@
       "category": "freelance",
       "link": "https://punto-picada.netlify.app/",
       "technologies": ["css", "bootstrap", "javascript", "api"]
+    },
+    {
+      "id": 11,
+      "image": "https://res.cloudinary.com/dncmrwppr/image/upload/v1709261340/ejemplo_tarn0c.jpg",
+      "title": "Dev Desing",
+      "description": "Landing page de mi proyecto emprendedor, orientado a potenciar empresas y proyectos individuales hacia su siguiente fase. Nos especializamos en la creación de landing pages, branding, contenido para redes sociales y desarrollo de software personalizado, con el objetivo de llevar a cada cliente a nuevas alturas.",
+      "category": "personales",
+      "link": "https://devdesing.netlify.app/",
+      "technologies": ["tailwindCSS", "javascript", "typescript", "nextjs"]
     }
   ]
     
