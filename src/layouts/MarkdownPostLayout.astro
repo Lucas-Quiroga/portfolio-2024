@@ -1,0 +1,75 @@
+---
+import Layout from "./Layout.astro";
+const { frontmatter } = Astro.props;
+---
+
+<Layout title={frontmatter.title}>
+  <div class="block fixed right-10 z-[2] max-w-[224px] mt-12">
+    <h3 class="text-sm pb-2 font-normal">Contenido del artículo</h3><ul
+      class="list-none list-outside"
+    >
+      <li>
+        <a
+          aria-current="page"
+          href="/articles/diferencias-entre-reactive-y-ref-en-vue-3#_1-la-funci%C3%B3n-ref"
+          class="router-link-active router-link-exact-active leading-6 text-xs font-medium text-gray-500"
+          ><span>1. La función ref()</span></a
+        >
+      </li><li>
+        <a
+          aria-current="page"
+          href="/articles/diferencias-entre-reactive-y-ref-en-vue-3#_2-la-funci%C3%B3n-reactive"
+          class="router-link-active router-link-exact-active leading-6 text-xs font-medium text-gray-500"
+          ><span>2. La función reactive()</span></a
+        >
+      </li><li>
+        <a
+          aria-current="page"
+          href="/articles/diferencias-entre-reactive-y-ref-en-vue-3#_3-cu%C3%A1ndo-usar-ref-o-reactive"
+          class="router-link-active router-link-exact-active leading-6 text-xs font-medium text-gray-500"
+          ><span>3. ¿Cuándo usar ref() o reactive()?</span></a
+        >
+      </li>
+    </ul>
+  </div>
+
+  <div class="body-format">
+    <h1>
+      <em class="text-5xl">{frontmatter.title}</em>
+    </h1>
+    <p>{frontmatter.description}</p>
+    <p>{frontmatter.pubDate.slice(0, 10)}</p>
+    <p>Escrito por: {frontmatter.author}</p>
+    <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
+
+    <slot />
+  </div>
+</Layout>
+<style>
+  a {
+    color: #00539f;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  h1 {
+    margin: 1rem 0;
+    font-size: 2.5rem;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .tag {
+    margin: 0.25em;
+    border: dotted 1px #a1a1a1;
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+    font-size: 1.15em;
+    background-color: #f8fcfd;
+  }
+</style>
