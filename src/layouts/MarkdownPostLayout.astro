@@ -1,35 +1,31 @@
 ---
 import Layout from "./Layout.astro";
-const { frontmatter } = Astro.props;
+const { frontmatter, content } = Astro.props;
+
+const frontmatterArray = Object.entries(frontmatter).map(([key, value]) => ({
+  key,
+  value,
+}));
+
+console.log(frontmatterArray);
 ---
 
 <Layout title={frontmatter.title}>
   <div class="block fixed right-10 z-[2] max-w-[224px] mt-12">
-    <h3 class="text-sm pb-2 font-normal">Contenido del artículo</h3><ul
-      class="list-none list-outside"
-    >
-      <li>
-        <a
-          aria-current="page"
-          href="/articles/diferencias-entre-reactive-y-ref-en-vue-3#_1-la-funci%C3%B3n-ref"
-          class="router-link-active router-link-exact-active leading-6 text-xs font-medium text-gray-500"
-          ><span>1. La función ref()</span></a
-        >
-      </li><li>
-        <a
-          aria-current="page"
-          href="/articles/diferencias-entre-reactive-y-ref-en-vue-3#_2-la-funci%C3%B3n-reactive"
-          class="router-link-active router-link-exact-active leading-6 text-xs font-medium text-gray-500"
-          ><span>2. La función reactive()</span></a
-        >
-      </li><li>
-        <a
-          aria-current="page"
-          href="/articles/diferencias-entre-reactive-y-ref-en-vue-3#_3-cu%C3%A1ndo-usar-ref-o-reactive"
-          class="router-link-active router-link-exact-active leading-6 text-xs font-medium text-gray-500"
-          ><span>3. ¿Cuándo usar ref() o reactive()?</span></a
-        >
-      </li>
+    <h3 class="text-sm pb-2 font-normal">Contenido del artículo</h3>
+    <ul class="list-none list-outside">
+      {
+        frontmatterArray.map((item: any, index: number) => (
+          <li>
+            <a
+              href={`#${item.key === "index"}`}
+              class="router-link-active router-link-exact-active leading-6 text-xs font-medium text-gray-500"
+            >
+              <span>{item.value}</span>
+            </a>
+          </li>
+        ))
+      }
     </ul>
   </div>
 
@@ -45,6 +41,7 @@ const { frontmatter } = Astro.props;
     <slot />
   </div>
 </Layout>
+
 <style>
   a {
     color: #00539f;
