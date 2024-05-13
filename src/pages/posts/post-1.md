@@ -2,6 +2,7 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: "Mi primera publicación en el blog"
 index: ["lo-que-he-conseguido", "conclusión", "nuevos-objetivos"]
+titleData: ["Lo que he conseguido", "Conclusión", "Nuevos objetivos"]
 pubDate: 2022-07-01
 description: "¡Bienvenido a mi _nuevo blog_ sobre el aprendizaje de Astro! Aquí, voy a compartir mi viaje de aprendizaje a medida que construyo un nuevo sitio web 123."
 author: "Lucas Quiroga"

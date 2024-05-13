@@ -1,13 +1,18 @@
 ---
 import Layout from "./Layout.astro";
+
 const { frontmatter, content } = Astro.props;
 
-const frontmatterArray = Object.entries(frontmatter).map(([key, value]) => ({
-  key,
-  value,
-}));
+let frontmatterArray = Object.entries(frontmatter);
 
-console.log(frontmatterArray);
+// Filtramos el array de index
+let frontmatterArrayFilterIndex = frontmatterArray.filter(
+  (item) => item[0] === "index"
+)[0][1];
+
+let frontmatterArrayFilterTitle = frontmatterArray.filter(
+  (item) => item[0] === "titleData"
+)[0][1];
 ---
 
 <Layout title={frontmatter.title}>
@@ -15,16 +20,21 @@ console.log(frontmatterArray);
     <h3 class="text-sm pb-2 font-normal">Contenido del artículo</h3>
     <ul class="list-none list-outside">
       {
-        frontmatterArray.map((item: any, index: number) => (
-          <li>
-            <a
-              href={`#${item.key === "index"}`}
-              class="router-link-active router-link-exact-active leading-6 text-xs font-medium text-gray-500"
-            >
-              <span>{item.value}</span>
-            </a>
-          </li>
-        ))
+        Array.isArray(frontmatterArrayFilterIndex) &&
+          frontmatterArrayFilterIndex.map((item: string, index: number) => (
+            <li>
+              <a
+                href={`#${item}`}
+                id={`link-${index}`}
+                class="router-link-active router-link-exact-active leading-6 text-xs font-medium text-gray-500"
+              >
+                {Array.isArray(frontmatterArrayFilterTitle) &&
+                  frontmatterArrayFilterTitle[index]}
+
+                {/* Accedemos al título correspondiente */}
+              </a>
+            </li>
+          ))
       }
     </ul>
   </div>
